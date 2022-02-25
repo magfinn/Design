@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function Nav() {
+
     return (
   <header>
     <h2>Maggie Finnegan</h2>

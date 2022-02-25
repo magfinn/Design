@@ -7,9 +7,10 @@ import React, { useState } from 'react';
 function App() {
   return(
     <div>
-      <Nav></Nav>
+      <Nav />
     <main>
-      <About></About>
+      <About />
+      <Project />
     </main>
     </div>
   );
