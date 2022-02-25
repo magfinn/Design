@@ -2,7 +2,7 @@ import React from 'react';
 
 function Nav() {
     return (
-        <header className='flex-row px-1'>
+  <header>
     <h2>Maggie Finnegan</h2>
     <nav>
       <ul className = 'flex-row'>
