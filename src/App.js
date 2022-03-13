@@ -1,19 +1,16 @@
-import './App.css';
-import Nav from './components/Navigation';
-import Project from './components/Project';
-import About from './components/About';
-import React, { useState } from 'react';
+import React from 'react';
+
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return(
     <div>
-      <Nav />
-    <main>
-      <About />
-      <Project />
-    </main>
+      <Header></Header>
+
+      <Footer></Footer>
     </div>
   );
-  }
+}
 
 export default App;

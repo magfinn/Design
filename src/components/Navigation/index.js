@@ -1,29 +1,32 @@
-import React, { useEffect } from 'react';
+import React from "react";
 
-function Nav() {
+function Nav(props) {
+  const navItems = ["About", "Portfolio", "Resume", "Contact Me"];
 
-    return (
-  <header>
-    <h2>Maggie Finnegan</h2>
+  return (
     <nav>
-      <ul className = 'flex-row'>
-        <li className= 'mx-2'>
-          <a data-testid="about" href="#about">About Me</a>
-        </li>
-        <li className='mx-2'>
-          <a data-testid='portfolio' href="#portfolio">Portfolio</a>
-        </li>
-        <li className='mx-2'>
-          <a data-testid='contact' href="#contact">Contact</a>
-        </li>
-        <li className='mx-2'>
-          <a data-testid='resume' href="#resume">Resume
-          </a>
-        </li>
+      <ul className="flex-row">
+        {navItems.map((navItems) => (
+          <li
+            className={
+              props.currentPage === navItems ? "mx-5 navActive" : "mx-5"
+            }
+            key={navItems}
+          >
+            <a
+              href={"#" + navItems.toLowerCase()}
+              onClick={() => props.handlePageChange(navItems)}
+              className={
+                props.currentPage === navItems ? "mx-5 navActive" : "mx-5"
+              }
+            >
+              {navItems}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
-</header>
-    )
+  );
 }
 
 export default Nav;

@@ -1,47 +1,39 @@
-import React, {useState} from 'react'
+import React from 'react';
+import Project from "../Project";
 
-const ProjectList = ({ project }) => {
-    const [projects] = useState([
+const projects = [
     {
-      name: 'Club Hub Kids',
-      description: 'Website for after-school programs and summer camps in the Sacramento Valley.',
-      img: 'clubhub.png'
+        title: 'Destination Unknown: Roadtrip Planner',
+        description: 'Roadtrip Planning App',
+        link: "https://khanhlam90.github.io/destination-unknown/"
     },
     {
-      name: 'Destination Unknown',
-      description: 'A road trip planner with maps, weather, budget, and event schedule within the United States.',
-      img: 'destination.png'
+        title: 'Club Hub Kids',
+        description: 'Database of Sacramento-based preschool-grade 12 after-school activities, teams and clubs.',
+        link: "https://clubhubkids.herokuapp.com/"
     },
     {
-      name: 'Bubble Space',
-      description: 'A social media platform where you can hear from people like you with opinions like yours and like them',
-      img: 'horiseon.png'
+        title: 'Javascript Randomized Password App',
+        description: 'Web-based tool to generate random passwords',
+        link: "https://magfinn.github.io/Randomized-Password-Application/"
     },
     {
-      name: 'Pencil It In',
-      description: 'A simple and easy to use daily web-based planner.',
-      img: 'pencil.png'
-    },
-    {
-      name: 'Password Generator',
-      description: 'A web-based random password generator.',
-      img: 'password.png'
+        title: 'Pencil It In',
+        description: 'Website with daily planner',
+        link: "https://magfinn.github.io/Pencil-It-In/"
     }
-  ]);
+]
+    
 
+function ProjectList() {
     return (
-    <section>
-        <div className='flex-row'>
-            {projects.map((image,i) => (
-                <img src={require(`../../assets/projects/${projects.img}`).default}
-                alt={image.name}
-                className='img-thumbnail mx-1 projects__img'
-                key={image.name}
-                />
-            ))}
-            </div>
-    </section>
-    )
-};
+        <div>
+            <h1>Portfolio</h1>
+
+            <Project projects={projects} />
+
+        </div>
+    );
+}
 
 export default ProjectList;
