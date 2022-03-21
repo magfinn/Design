@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Design/static/css/main.0b9596ca.css",
+    "main.js": "/Design/static/js/main.7e3f5c8e.js",
+    "static/media/destination.png": "/Design/static/media/destination.761c233189818e508e2c.png",
+    "static/media/horiseon.png": "/Design/static/media/horiseon.91771a1c7022214d1f79.png",
+    "static/media/portfolio.png": "/Design/static/media/portfolio.2730ee1dbc9d5a98e5fc.png",
+    "static/media/runBuddy.png": "/Design/static/media/runBuddy.a946e11f880279566d6b.png",
+    "static/media/Orange.png": "/Design/static/media/Orange.5a26789048ddc80c31d4.png",
+    "static/media/clubhub.png": "/Design/static/media/clubhub.38c1ba718dcfea3eefcc.png",
+    "static/media/pencil.png": "/Design/static/media/pencil.d65dbb673a12ab3446c8.png",
+    "static/media/password.png": "/Design/static/media/password.2599eb75efaae4c4e705.png",
+    "static/media/App.test.png": "/Design/static/media/App.test.71d409e2e32456fd4471.png",
+    "static/media/index.jpeg": "/Design/static/media/index.b95ceba41a7a665f4502.jpeg",
+    "index.html": "/Design/index.html",
+    "main.0b9596ca.css.map": "/Design/static/css/main.0b9596ca.css.map",
+    "main.7e3f5c8e.js.map": "/Design/static/js/main.7e3f5c8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b9596ca.css",
+    "static/js/main.7e3f5c8e.js"
+  ]
+}
